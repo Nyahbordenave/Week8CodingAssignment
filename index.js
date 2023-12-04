@@ -36,7 +36,7 @@ class Menu {
         alert("Thanks for coming! Goodbye!");
     } // start menu created, and exit alert added here 
 
-    // Method to declare main menu options and get user input
+    // declare main menu options and get user input
     showMainMenuOptions() {
         return prompt(`
         0) Exit
@@ -66,8 +66,6 @@ class Menu {
         if (index >= 0 && index < this.foodItems.length) {
             let deletedItemName = this.foodItems[index].name;
             alert(`${deletedItemName} has been deleted from the list.`);
-
-            // Delete the item
             this.foodItems.splice(index, 1);
         } else {
             alert("Invalid index. No item has been deleted.");
